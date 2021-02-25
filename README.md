@@ -28,8 +28,8 @@ We want to generate a report describing the continuity of work for each user as 
 
 In the dataset above, this gives:
 
-* Worker 1435 worked three times between January 1st and January 8, only used platform `12`, and never switch role nor employer. So continuity=8 (from 1st to 8th inclusive).
-* Worker 135 has been seen three times, but switched role after the first occurrence. So we only count the last two positions, continuity=3.
+* Worker 1435 worked three different days between January 1st and January 8, only used platform `12`, and never switch role nor employer. So continuity=3
+* Worker 135 has been seen three times, but switched role after the first occurrence; thus we only count the last two positions, continuity=2.
 * Worker 456 worked a first time more than 6 weeks ago, and then we saw it again on February 1st, so continuity=1.
 
 
