@@ -8,33 +8,32 @@ This exercise consists of developing a simple tool to compute the continuity of 
 In `worker_activity.csv`, you will find data structured as below (here ordered by Worker for convenience):
 
 ```
-Worker, Platform, Employer, Role, Date
-1435, 12, 234, 86,  2021-01-01
-1435, 12, 234, 86,  2021-01-04
-1435, 12, 234, 86,  2021-01-08
-135,  6,  45,  696, 2021-01-25
-135,  6,  45,  95,  2021-01-27
-135,  6,  45,  95,  2021-01-29
-456,  53, 78,  576, 2020-11-02
-456,  53, 78,  576, 2021-01-29
+Worker, Employer, Role, Date
+1435, 234, 86,  2020-01-01
+1435, 234, 86,  2020-01-04
+1435, 234, 86,  2020-01-08
+135,  45,  696, 2020-01-25
+135,  45,  95,  2020-01-27
+135,  45,  95,  2020-01-29
+456,  78,  576, 2020-02-02
+456,  78,  576, 2020-11-29
 ```
 
 
 ## Continuity of Work
 
-We want to generate a report describing the continuity of work for each user *as of 2021-02-01*. 
-We increment continuity for each day worked, and is reset when one of the rules below apply:
+We want to generate a report describing the continuity of work for each user *as of 2020-12-01*. 
+We increment continuity for each day worked, and the counter is reset when one of the rules below apply:
 
-* They have no activity on any platform for more than 6 weeks (42 days, inclusive).
-* There's activity but they switched to a different platform.
-* They stayed on a platform but they switched to a different employer.
-* They stayed on a platform but they switched to a different role.
+* A worked had no activity for more than 6 days.
+* A worker stayed active but switched to a different employer.
+* A worker stayed active but switched to a different role.
 
 In the dataset above, this gives:
 
-* Worker `1435` worked three different days between January 1st and January 8, only used platform 12, and never switch role nor employer. So continuity=3
+* Worker `1435` worked three different days between January 1st and January 8, and never switch role nor employer. So continuity=3
 * Worker `135` appears three times, but switched role after the first occurrence; thus we only count the last two positions, therefore continuity=2.
-* Worker `456` worked a first time in October 2020, then paused for more than 6 weeks, then worked again in January 2021; so continuity=1.
+* Worker `456` worked a first time in February 2020, then paused for more than 6 weeks, then worked again in November 2020; so continuity=1.
 
 
 ## Results
