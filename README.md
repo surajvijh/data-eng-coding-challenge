@@ -5,10 +5,10 @@ This exercise consists of developing a simple tool to compute the continuity of 
 
 ## Data Format
 
-In `worker_activity.csv`, you will find data structured as below (here ordered by WorkerID for convenience):
+In `worker_activity.csv`, you will find data structured as below (here ordered by Worker for convenience):
 
 ```
-WorkerID, Platform, Employer, Role, StartTime, EndTime
+Worker, Platform, Employer, Role, StartTime, EndTime
 1435, 12, 234, 86,  2021-01-01 12:00:00, 2021-01-01 15:00:00
 1435, 12, 234, 86,  2021-01-04 12:00:00, 2021-01-04 15:00:00
 1435, 12, 234, 86,  2021-01-08 12:00:00, 2021-01-08 15:00:00
