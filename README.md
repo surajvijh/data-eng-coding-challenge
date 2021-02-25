@@ -4,18 +4,18 @@ This exercise consists of developing a simple tool to identify workers with a X-
 
 ## Data Format
 
-In `worker_activity.csv`, you will find data:
+In `worker_activity.csv`, you will find data structured as below (here ordered by WorkerID for convenience):
 
 ```
-WorkerID, Platform, Employer, Role, Date
-1435, 12, 234, 86,  2021-01-01 12:00:00
-1435, 12, 234, 86,  2021-01-04 12:00:00
-1435, 12, 234, 86,  2021-01-08 12:00:00
-135,  6,  45,  696, 2021-01-25 12:00:00
-135,  6,  45,  95,  2021-01-27 12:00:00
-135,  6,  45,  95,  2021-01-29 12:00:00
-456,  53, 78,  576, 2020-11-02 12:00:00
-456,  53, 78,  576, 2021-02-01 12:00:00
+WorkerID, Platform, Employer, Role, StartTime, EndTime
+1435, 12, 234, 86,  2021-01-01 12:00:00, 2021-01-01 15:00:00
+1435, 12, 234, 86,  2021-01-04 12:00:00, 2021-01-04 15:00:00
+1435, 12, 234, 86,  2021-01-08 12:00:00, 2021-01-08 15:00:00
+135,  6,  45,  696, 2021-01-25 12:00:00, 2021-01-25 15:00:00
+135,  6,  45,  95,  2021-01-27 12:00:00, 2021-01-27 15:00:00
+135,  6,  45,  95,  2021-01-29 12:00:00, 2021-01-29 15:00:00
+456,  53, 78,  576, 2020-11-02 12:00:00, 2020-11-02 15:00:00
+456,  53, 78,  576, 2021-02-01 12:00:00, 2021-02-01 15:00:00
 ```
 
 ## Continuity of Work
@@ -28,7 +28,7 @@ We want to generate a report describing the continuity of work for each user as 
 
 In the dataset above, this gives:
 
-* Worker 1435 worked three different days between January 1st and January 8, only used platform `12`, and never switch role nor employer. So continuity=3
+* Worker 1435 worked three different days between January 1st and January 8, only used platform 12, and never switch role nor employer. So continuity=3
 * Worker 135 has been seen three times, but switched role after the first occurrence; thus we only count the last two positions, continuity=2.
 * Worker 456 worked a first time more than 6 weeks ago, and then we saw it again on February 1st, so continuity=1.
 
@@ -39,8 +39,8 @@ We expect a `results.csv` file following this format:
 
 ```
 WorkerID, Days_Continuity
-1435, 7
-135,  1
+1435, 3
+135,  2
 456,  1
 ```
 
