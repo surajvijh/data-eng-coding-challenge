@@ -15,11 +15,9 @@ WorkerID, Platform, Employer, Role, StartTime, EndTime
 135,  6,  45,  696, 2021-01-25 12:00:00, 2021-01-25 15:00:00
 135,  6,  45,  95,  2021-01-27 12:00:00, 2021-01-27 15:00:00
 135,  6,  45,  95,  2021-01-29 12:00:00, 2021-01-29 15:00:00
-456,  53, 78,  576, 2020-11-02 12:00:00, 2020-10-02 15:00:00
-456,  53, 78,  576, 2021-02-01 12:00:00, 2021-01-29 15:00:00
+456,  53, 78,  576, 2020-11-02 12:00:00, 2020-11-02 15:00:00
+456,  53, 78,  576, 2021-01-29 12:00:00, 2021-01-29 15:00:00
 ```
-
-You will need to handle all the potential errors when reading the file.
 
 
 ## Continuity of Work
@@ -62,8 +60,9 @@ Implement your application in a stream-oriented fashion, or document how you wou
 As part of your submission, please answer the following questions in a simple text file.
 
 1. What is the complexity of your algorithm?
-2. We provided a CSV file for conveniency, but in a production environment, what format or database would you recommend instead for this use-case?
-3. Is there anything else you would implement differently for a large-scale application in production?
+2. If you were to review someone else's code, what would you pay attention to?
+3. We provided a CSV file for conveniency, but in a production environment, what format or database would you recommend instead for this use-case (and why)?
+4. Is there anything else you would implement differently for a large-scale application in production?
 
 
 ## Submission
