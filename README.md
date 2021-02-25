@@ -8,10 +8,11 @@ In `worker_activity.csv`, you will find data:
 
 ```
 WorkerID, Platform, Employer, Role, Date
-1435, 12, 234, 86,  2021-02-01 03:32:12
-456,  53, 78,  576, 2021-02-02 03:32:12
-1435, 12, 234, 86,  2021-02-08 03:32:12
-135,  6,  45,  696, 2021-02-03 03:32:12
+1435, 12, 234, 86,  2021-01-01 12:00:00
+1435, 12, 234, 86,  2021-01-04 12:00:00
+456,  53, 78,  576, 2021-01-02 12:00:00
+1435, 12, 234, 86,  2021-01-08 12:00:00
+135,  6,  45,  696, 2021-01-03 12:00:00
 ```
 
 ## Continuity of Work
@@ -33,6 +34,12 @@ WorkerID, Days_Continuity
 456,  0
 135,  1
 ```
+
+## Bonus Points
+
+Implement your application in a stream-oriented fashion, or document how you would implement this in addition to your batch-oriented implementation.
+
+
 
 ## Submission
 
