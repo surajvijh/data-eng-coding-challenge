@@ -23,7 +23,7 @@ Worker, Employer, Role, Date
 ## Continuity of Work
 
 We want to generate a report describing the continuity of work for each user *as of 2020-12-01*. 
-We increment continuity for each day worked, and the counter is reset when one of the rules below apply:
+We increment continuity for each day worked, and the counter is reset when one of the rules below applies:
 
 * A worker had no activity for more than 6 days.
 * A worker stayed active but switched to a different employer.
