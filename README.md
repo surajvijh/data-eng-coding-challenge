@@ -1,4 +1,4 @@
-# Syft Data Engineer Coding Exercise
+# Syft Data Engineer Coding Challenge
 
 This exercise consists of developing a simple tool to compute the continuity of work for the workers on the platform.
 
@@ -25,13 +25,13 @@ Worker, Employer, Role, Date
 We want to generate a report describing the continuity of work for each user *as of 2020-12-01*. 
 We increment continuity for each day worked, and the counter is reset when one of the rules below apply:
 
-* A worked had no activity for more than 6 days.
+* A worker had no activity for more than 6 days.
 * A worker stayed active but switched to a different employer.
 * A worker stayed active but switched to a different role.
 
 In the dataset above, this gives:
 
-* Worker `1435` worked three different days between January 1st and January 8, and never switch role nor employer. So continuity=3
+* Worker `1435` worked three different days between January 1st and January 8, and never switched role nor employer. So continuity=3
 * Worker `135` appears three times, but switched role after the first occurrence; thus we only count the last two positions, therefore continuity=2.
 * Worker `456` worked a first time in February 2020, then paused for more than 6 weeks, then worked again in November 2020; so continuity=1.
 
@@ -69,3 +69,4 @@ As part of your submission, please answer the following questions in a simple te
 Please write your application in either Python, Java, Scala or Kotlin, with a runnable shell script named `run-app.sh` to launch your application.
 Please add the resulting CSV file as well as all the other materials asked above.
 Submit all the expected files in a tarball named as follows: `syft-dataeng-<firstname>-<lastname>.tar.gz`.
+It's recommended to spend approximately 1 hour on this challenge. However, you are free to elaborate as much as you want to show us your ability to deliver great software!
