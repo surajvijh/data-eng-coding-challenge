@@ -42,7 +42,7 @@ We expect a `results.csv` file following this format, ordered by Continuity (des
 The field `Continuity` is expressed in days.
 
 ```
-WorkerID, Continuity
+Worker, Continuity
 1435, 3
 135,  2
 456,  1
