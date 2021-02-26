@@ -33,7 +33,7 @@ In the dataset above, this gives:
 
 * Worker `1435` worked three different days between January 1st and January 8, and never switched role nor employer. So continuity=3
 * Worker `135` appears three times, but switched role after the first occurrence; thus we only count the last two positions, therefore continuity=2.
-* Worker `456` worked a first time in February 2020, then paused for more than 6 weeks, then worked again in November 2020; so continuity=1.
+* Worker `456` worked a first time in February 2020, then paused for more than 6 days, then worked again in November 2020; so continuity=1.
 
 
 ## Results
