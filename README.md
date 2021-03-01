@@ -5,18 +5,18 @@ This exercise consists of developing a simple tool to compute the continuity of 
 
 ## Data Format
 
-In `worker_activity.csv`, you will find data structured as below (here ordered by Worker for convenience):
+In `worker_activity.csv` (available in this repository), you will find data structured as below (here ordered by Worker for convenience):
 
 ```
 Worker, Employer, Role, Date
-1435, 234, 86,  2020-01-01
-1435, 234, 86,  2020-01-04
-1435, 234, 86,  2020-01-08
-135,  45,  696, 2020-01-25
-135,  45,  95,  2020-01-27
-135,  45,  95,  2020-01-29
-456,  78,  576, 2020-02-02
-456,  78,  576, 2020-11-29
+1435, 234, 86,  2020-01-01 17:00:00
+1435, 234, 86,  2020-01-04 12:30:00
+1435, 234, 86,  2020-01-08 07:00:00
+135,  45,  696, 2020-01-25 18:00:00
+135,  45,  95,  2020-01-27 18:00:00
+135,  45,  95,  2020-01-29 22:15:00
+456,  78,  576, 2020-02-02 05:00:00
+456,  78,  576, 2020-11-29 14:30:00
 ```
 
 
@@ -56,7 +56,7 @@ Implement your application in a stream-oriented fashion, or document how you wou
 
 ## Open questions
 
-As part of your submission, please answer the following questions in a simple text file.
+As part of your submission, please answer the following questions in a `readme.txt` file.
 
 1. What is the complexity of your algorithm?
 2. If you were to review someone else's code, what would you pay attention to?
