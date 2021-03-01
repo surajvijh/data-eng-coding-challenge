@@ -5,7 +5,7 @@ This exercise consists of developing a simple tool to compute the continuity of 
 
 ## Data Format
 
-In `worker_activity.csv` (available in this repository), you will find data structured as below (here ordered by Worker for convenience):
+In `worker_activity.csv` (please use the file provided in this repository), you will find data structured as below (here ordered by Worker for convenience):
 
 ```
 Worker, Employer, Role, Date
@@ -38,7 +38,7 @@ In the dataset above, this gives:
 
 ## Results
 
-We expect a `results.csv` file following this format, ordered by Continuity (descending order).
+We expect a `results.csv` file following this format, ordered by `Continuity` (descending order).
 The field `Continuity` is expressed in days.
 
 ```
@@ -51,7 +51,7 @@ Worker, Continuity
 
 ## Bonus Points
 
-Implement your application in a stream-oriented fashion, or document how you would implement this in addition to your batch-oriented implementation.
+We don't expect your solution to use sophisticated paradigms or frameworks. However, you can spend as much time you want to demonstrate your skills. You can, for example, implement your application in a stream-oriented fashion, or document how you would implement this in addition to your batch-oriented implementation.
 
 
 ## Open questions
