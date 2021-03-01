@@ -67,6 +67,5 @@ As part of your submission, please answer the following questions in a `readme.t
 ## Submission
 
 Please write your application in either Python, Java, Scala or Kotlin, with a runnable shell script named `run-app.sh` to launch your application.
-Please add the resulting CSV file as well as all the other materials asked above.
-Submit all the expected files in a tarball named as follows: `syft-dataeng-<firstname>-<lastname>.tar.gz`.
+Please put your results in `result.csv` and submit all the files in a tarball named as follows: `syft-dataeng-<firstname>-<lastname>.tar.gz`.
 It's recommended to spend approximately 1 hour on this challenge. However, you are free to elaborate as much as you want to show us your ability to deliver great software!
